@@ -50,7 +50,7 @@ public class CommandHandler extends CommandBase {
         }
         if(args.length == 1) {
             try {
-                AnnouncerSpirit.send("Current spell sequence for ID " + MainMod.macroList.get(spellID).getRawSequence());
+                AnnouncerSpirit.send("Current spell sequence for this ID is " + MainMod.macroList.get(spellID).getRawSequence());
             } catch (NullPointerException e) {
                 AnnouncerSpirit.send("This sequence has not been defined a value yet.");
             }
@@ -58,7 +58,7 @@ public class CommandHandler extends CommandBase {
         String[] sequenceList = Arrays.copyOfRange(args, 1, args.length);
         String sequence = String.join(" ", sequenceList);
         MainMod.macroList.put(spellID, new SpellSequence(sequence));
-        AnnouncerSpirit.send("Added sequence " + MainMod.macroList.get(spellID).getRawSequence() + " to ID " + spellID);
+        AnnouncerSpirit.send("Added sequence " + MainMod.macroList.get(spellID).getRawSequence() + " to ID " + spellID+1);
         try {
             ConfigSpirit.writeConfig();
         } catch (IOException e) {

@@ -54,6 +54,7 @@ public class CommandHandler extends CommandBase {
             } catch (NullPointerException e) {
                 AnnouncerSpirit.send("This sequence has not been defined a value yet.");
             }
+            return;
         }
         String[] sequenceList = Arrays.copyOfRange(args, 1, args.length);
         String sequence = String.join(" ", sequenceList);

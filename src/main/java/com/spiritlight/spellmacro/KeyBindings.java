@@ -42,7 +42,7 @@ public class KeyBindings
             return;
         }
         if(keyBindings[4].isPressed()) {
-            SpellCast.cast(MainMod.macroList.get(0));
+            MainMod.cancel.set(0, true);
             return;
         }
     }

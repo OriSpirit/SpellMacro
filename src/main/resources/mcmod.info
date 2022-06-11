@@ -1,0 +1,16 @@
+[
+{
+  "modid": "spell",
+  "name": "SpellMacro",
+  "description": "Use /spell for more info, making Wynn spell casting quick.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["OriTheSpirit"],
+  "credits": "The Forge and FML guys, for making this example; Revxrsal for assisting with bugs.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

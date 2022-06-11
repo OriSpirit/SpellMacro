@@ -59,7 +59,7 @@ public class CommandHandler extends CommandBase {
         String[] sequenceList = Arrays.copyOfRange(args, 1, args.length);
         String sequence = String.join(" ", sequenceList);
         MainMod.macroList.put(spellID, new SpellSequence(sequence));
-        AnnouncerSpirit.send("Added sequence " + MainMod.macroList.get(spellID).getRawSequence() + " to ID " + spellID+1);
+        AnnouncerSpirit.send("Added sequence " + MainMod.macroList.get(spellID).getRawSequence() + " to ID " + (spellID+1));
         try {
             ConfigSpirit.writeConfig();
         } catch (IOException e) {

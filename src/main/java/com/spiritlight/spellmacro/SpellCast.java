@@ -34,7 +34,7 @@ public class SpellCast {
                 }
                 Minecraft.getMinecraft().getConnection().sendPacket(integer == 0 ? leftClick : rightClick);
                 try {
-                    Thread.sleep(50);
+                    Thread.sleep(sequence.getCastDelay());
                 } catch (InterruptedException ignored) {
                 }
             }

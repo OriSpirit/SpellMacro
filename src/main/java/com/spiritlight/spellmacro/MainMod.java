@@ -15,7 +15,7 @@ public class MainMod
 {
     public static final String MODID = "spell";
     public static final String NAME = "SpellMacros";
-    public static final String VERSION = "1.0";
+    public static final String VERSION = "1.1";
     static final Map<Integer, SpellSequence> macroList = new HashMap<>(4);
     static final List<Boolean> cancel = new ArrayList<>(Arrays.asList(false));
 
@@ -34,6 +34,7 @@ public class MainMod
         }
         KeyBindings.register();
         ClientCommandHandler.instance.registerCommand(new CommandHandler());
+        ClientCommandHandler.instance.registerCommand(new SpellTimeCommand());
         MinecraftForge.EVENT_BUS.register(new KeyBindings());
     }
 

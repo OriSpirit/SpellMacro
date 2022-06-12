@@ -7,11 +7,13 @@ Goal: Make Wynncraft Spell easier to cast at a faster rate than Wynntils.
 
 Command syntax:
 
-/spell < id 1-4 > < spell sequence >
+/spell < id 1-4 > < spell sequence > - Sets input sequence
 
-Spell Sequence should contain L or R
+Spell Sequence should contain L or R (Any other input will be ignored)
 
-Spell cast delay (to prevent cast confusion): 50ms
+/spelltime < id > < duration > - Sets cast key delay to xms (x>=5)
+
+Spell cast delay default (to prevent cast confusion): 50ms
 
 ## Building
 
